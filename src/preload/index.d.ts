@@ -1,8 +1,11 @@
-import { ElectronAPI } from '@electron-toolkit/preload'
+//import { ElectronAPI } from "@electron-toolkit/preload";
+
+import { GetVersionsFn } from "@shared/types";
 
 declare global {
   interface Window {
-    electron: ElectronAPI
-    api: unknown
+    context: {
+      getVersions: GetVersionsFn;
+    };
   }
 }

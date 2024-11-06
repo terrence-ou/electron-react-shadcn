@@ -2,7 +2,7 @@ import Versions from "./components/Versions";
 
 function App(): JSX.Element {
   //const ipcHandle = (): void => window.electron.ipcRenderer.send("ping");
-
+  window.context.getVersions();
   return (
     <>
       <div>
@@ -10,7 +10,7 @@ function App(): JSX.Element {
           Electron + React + Shadcn
         </h1>
       </div>
-      <Versions></Versions>
+      <Versions />
     </>
   );
 }
