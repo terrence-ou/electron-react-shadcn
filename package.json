@@ -1,9 +1,9 @@
 {
-  "name": "electron-app",
-  "version": "1.0.0",
-  "description": "An Electron application with React and TypeScript",
+  "name": "Electron with Shadcn",
+  "version": "0.0.0",
+  "description": "An Electron application with React, TypeScript, and Shadcn",
   "main": "./out/main/index.js",
-  "author": "example.com",
+  "author": "Author",
   "homepage": "https://electron-vite.org",
   "scripts": {
     "format": "prettier --write .",
