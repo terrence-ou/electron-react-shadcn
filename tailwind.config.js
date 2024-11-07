@@ -1,3 +1,5 @@
+const { transform } = require("typescript");
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ["class"],
@@ -63,10 +65,26 @@ module.exports = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        spin: {
+          from: { transform: "rotate(0deg)" },
+          to: { transform: "rotate(360deg)" },
+        },
+        bounce: {
+          "0%, 100%": {
+            transform: "translateY(-15%)",
+            "animation-timing-function": "cubic-bezier(0.8, 0, 1, 1)",
+          },
+          "50%": {
+            transform: "translateY(10%)",
+            "animation-timing-function": "cubic-bezier(0, 0, 0.2, 1)",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "spin-slow": "spin 5s linear infinite",
+        "bounce-slow": "bounce 3s infinite",
       },
     },
   },
