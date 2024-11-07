@@ -12,9 +12,15 @@ const App = () => {
     setCount((prevCount) => prevCount + 1);
   };
 
+  const handleTriggerIPC = () => {
+    console.log("IPC is invoked in main process, please check your terminal.");
+    window.context.triggerIPC();
+  };
+
   return (
     <div className="text-center">
-      <div className="flex justify-center items-center gap-6 my-6">
+      {/* logos */}
+      <div className="flex justify-center items-center gap-6 my-8">
         <img className="w-32 opacity-80 animate-spin-slow" src={electronIcon} />
         <p className="text-3xl">+</p>
         <img
@@ -27,17 +33,26 @@ const App = () => {
           src={shadcnIcon}
         />
       </div>
+      {/* heading */}
       <h1 className="text-[2.1rem] mt-5 font-bold font-serif bg-gradient-to-r from-zinc-800 to-zinc-500 text-secondary rounded-md">
         Electron + React + Shadcn
       </h1>
       <h3 className="my-5 font-bold text-lg">{count}</h3>
-      <div className="flex justify-center gap-5">
+      {/* interaction buttons */}
+      <div className="flex justify-center gap-5 mb-10">
         <Button onClick={hanleIncreaseCount} className="w-32 h-9">
           Increase Count
         </Button>
-        <Button className="w-32 h-9">Invoke IPC</Button>
+        <Button onClick={handleTriggerIPC} className="w-32 h-9">
+          Invoke IPC
+        </Button>
       </div>
+      {/* versions */}
       <Versions />
+      <p className="text-sm mt-0">
+        Press <span className="font-bold">F12</span> to toggle the DevTool.
+        Press <span className="font-bold">Ctrl/Cmd+r</span> to re-draw the view.
+      </p>
     </div>
   );
 };

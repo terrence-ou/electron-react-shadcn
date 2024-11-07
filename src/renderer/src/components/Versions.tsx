@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 
 type AppVersion = { [key: string]: string } | undefined;
 
+// The body of Versions component
+// Displays the current version of Electron, Chromium, and Node.js
 const Versions = () => {
   const [versions, setVersions] = useState<AppVersion>(undefined);
 
