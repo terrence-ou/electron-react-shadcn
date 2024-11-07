@@ -2,7 +2,7 @@ import { app, shell, BrowserWindow, ipcMain } from "electron";
 import { join } from "path";
 import { electronApp, optimizer, is } from "@electron-toolkit/utils";
 import icon from "../../resources/icon.png?asset";
-import { getVersions } from "@/lib";
+import { getVersions, triggerIPC } from "@/lib";
 import { GetVersionsFn } from "@shared/types";
 
 function createWindow(): void {
@@ -65,6 +65,8 @@ app.whenReady().then(() => {
   ipcMain.handle("getVersions", (_, ...args: Parameters<GetVersionsFn>) =>
     getVersions(...args),
   );
+
+  ipcMain.handle("triggerIPC", () => triggerIPC());
 });
 
 // Quit when all windows are closed, except on macOS. There, it's common
