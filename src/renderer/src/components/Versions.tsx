@@ -19,7 +19,7 @@ const Versions = () => {
 
   return (
     versions && (
-      <ul className="flex gap-4 justify-center mt-8 text-sm">
+      <ul className="flex gap-4 justify-center mt-6 text-sm font-semibold">
         <li>
           Electron{" "}
           <span className="italic font-light">v-{versions.electron}</span>

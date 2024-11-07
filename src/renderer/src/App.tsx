@@ -14,20 +14,23 @@ const App = () => {
 
   return (
     <div className="text-center">
-      <div className="flex justify-center items-center gap-6 my-4">
-        <img className="w-32 opacity-70 animate-spin-slow" src={electronIcon} />
-        <p className="text-3xl">+</p>
-        <img className="w-32 opacity-70 animate-spin-slow" src={reactIcon} />
+      <div className="flex justify-center items-center gap-6 my-6">
+        <img className="w-32 opacity-80 animate-spin-slow" src={electronIcon} />
         <p className="text-3xl">+</p>
         <img
-          className="w-32 h-24 opacity-70 animate-bounce-slow"
+          className="w-32 h-28 opacity-80 animate-spin-slow"
+          src={reactIcon}
+        />
+        <p className="text-3xl">+</p>
+        <img
+          className="w-32 h-24 opacity-80 animate-bounce-slow"
           src={shadcnIcon}
         />
       </div>
-      <h1 className="text-[2.2rem] mt-5 font-bold text-zinc-700">
+      <h1 className="text-[2.1rem] mt-5 font-bold font-serif bg-gradient-to-r from-zinc-800 to-zinc-500 text-secondary rounded-md">
         Electron + React + Shadcn
       </h1>
-      <h3 className="my-5">{count}</h3>
+      <h3 className="my-5 font-bold text-lg">{count}</h3>
       <div className="flex justify-center gap-5">
         <Button onClick={hanleIncreaseCount} className="w-32 h-9">
           Increase Count

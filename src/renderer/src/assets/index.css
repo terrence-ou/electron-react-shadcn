@@ -77,7 +77,7 @@
     @apply border-border;
   }
   body {
-    @apply flex items-center justify-center min-h-dvh bg-background text-foreground;
+    @apply flex items-center justify-center min-h-dvh text-foreground bg-gradient-to-tr from-zinc-500 via-zinc-300 to-background;
     font-feature-settings:
       "rlig" 1,
       "calt" 1;
