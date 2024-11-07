@@ -6,7 +6,7 @@
 
 ## Overview
 
-This Electron boilerplate enables developers to quickly build cross-platform apps using Electron, Vite, and React with Shadcn UI. Based on @alex8088’s great `npm create @quick-start/electron` package, this template includes added styling (Tailwind, Shadcn UI) and testing libraries (Jest, Testing Library) to streamline setup and save development time.
+This Electron boilerplate enables developers to quickly build cross-platform apps using Electron, Vite, and React with Shadcn UI. Based on [@alex8088](https://github.com/alex8088)’s awsome `npm create @quick-start/electron` package, this template includes added styling (Tailwind, Shadcn UI) and testing libraries (Jest, Testing Library) to streamline setup and save development time.
 
 ### Tech Stack
 
@@ -14,14 +14,14 @@ This Electron boilerplate enables developers to quickly build cross-platform app
 |---------------------------|---------------------------------------------------------------------------------------------|
 | **Software Framework**    | [Electron](https://www.electronjs.org/)                                                     |
 | **Frontend Library**      | [React](https://react.dev/)                                                                 |
-| **Build Tool**            | [Vite](https://vite.dev/), [Electron-Vite](electron-vite.org)                                                                   |
+| **Build Tool**            | [Vite](https://vite.dev/), [Electron-Vite](https://electron-vite.org/)                                                                   |
 | **UI and Styling**        | [shadcn](https://ui.shadcn.com/), [Tailwind](https://tailwindcss.com/)                      |
 | **Testing**               | [Jest](https://jestjs.io/), [Testing Library](https://testing-library.com/)                 |
 
 ## Quick Start
 
 You can use this boilerplate by directly download or clone this repository, and install the dependencies.
-```bash
+```console
 # clone this project
 git clone https://github.com/terrence-ou/electron-react-shadcn.git
 
@@ -29,7 +29,7 @@ git clone https://github.com/terrence-ou/electron-react-shadcn.git
 cd electron-react-shadcn
 
 # you can choose to remove the git info from this repo to avoid potential git conflicts
-rm -r .git
+sudo rm -r .git
 
 # install dependencies
 npm install
