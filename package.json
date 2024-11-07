@@ -1,7 +1,7 @@
 {
-  "name": "Electron-with-Shadcn",
+  "name": "Electron-React-Shadcn",
   "version": "0.0.0",
-  "description": "An Electron application with React, TypeScript, and Shadcn UI",
+  "description": "An Electron template with React, TypeScript, and Shadcn UI",
   "main": "./out/main/index.js",
   "author": "Author",
   "homepage": "https://electron-vite.org",
