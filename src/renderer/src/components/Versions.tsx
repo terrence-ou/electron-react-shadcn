@@ -1,14 +1,14 @@
 import { useEffect, useState } from "react";
 
+type AppVersion = { [key: string]: string } | undefined;
+
 const Versions = () => {
-  const [versions, setVersions] = useState<
-    { [key: string]: string } | undefined
-  >(undefined);
+  const [versions, setVersions] = useState<AppVersion>(undefined);
 
   useEffect(() => {
     const getVersions = async () => {
       try {
-        const result = await window.context.getVersions();
+        const result = (await window.context.getVersions()) as AppVersion;
         setVersions(result);
       } catch (error) {
         console.error(error);
@@ -19,10 +19,18 @@ const Versions = () => {
 
   return (
     versions && (
-      <ul className="flex gap-2">
-        <li>Electron v{versions.electron}</li>
-        <li>Chromium v{versions.chrome}</li>
-        <li>Node v{versions.node}</li>
+      <ul className="flex gap-4 justify-center mt-8 text-sm">
+        <li>
+          Electron{" "}
+          <span className="italic font-light">v-{versions.electron}</span>
+        </li>
+        <li>
+          Chromium{" "}
+          <span className="italic font-light">v-{versions.chrome}</span>
+        </li>
+        <li>
+          Node <span className="italic font-light">v-{versions.node}</span>
+        </li>
       </ul>
     )
   );

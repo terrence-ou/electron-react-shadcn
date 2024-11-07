@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -75,9 +77,13 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply flex items-center justify-center min-h-dvh bg-background text-foreground;
     font-feature-settings:
       "rlig" 1,
       "calt" 1;
   }
+}
+
+body {
+  font-family: "Inter", sans-serif;
 }
