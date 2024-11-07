@@ -1,5 +1,5 @@
 {
-  "name": "Electron-React-Shadcn",
+  "name": "electron-react-shadcn",
   "version": "0.0.0",
   "description": "An Electron template with React, TypeScript, and Shadcn UI",
   "main": "./out/main/index.js",
