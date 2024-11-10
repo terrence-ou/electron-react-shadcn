@@ -46,7 +46,14 @@ npm run dev
 You can use this command to create a new project with this boilerplate directly in the directory.
 
 ```bash
+# create a new project using this boilerplate
 npx electron-react-shadcn
+
+# install dependencies
+npm install
+
+# start the project in dev mode
+npm run dev
 ```
 
 ### Test and build commands
