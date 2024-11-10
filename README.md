@@ -20,8 +20,11 @@ This Electron boilerplate enables developers to quickly build cross-platform app
 
 ## Quick Start
 
+### Option 1: Clone this repository directly
+
 You can use this boilerplate by directly download or clone this repository, and install the dependencies.
-```console
+
+```bash
 # clone this project
 git clone https://github.com/terrence-ou/electron-react-shadcn.git
 
@@ -36,11 +39,21 @@ npm install
 
 # start the project in dev mode
 npm run dev
-
 ```
 
+### Option 2 (Experimental): Use `npx electron-react-shadcn` to create a new project.
+
+You can use this command to create a new project with this boilerplate directly in the directory.
+
+```bash
+npx electron-react-shadcn
+```
+
+### Test and build commands
+
 There're some pre-defined commands you might find useful
-```console
+
+```bash
 # run unit test
 npm run test
 
