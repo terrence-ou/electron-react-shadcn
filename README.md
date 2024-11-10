@@ -40,7 +40,7 @@ npm run dev
 ```
 
 There're some pre-defined commands you might find useful
-```bash
+```console
 # run unit test
 npm run test
 
@@ -76,7 +76,7 @@ npm run build:linux # build for linux
 │   │   └── index.html              # HTML template for the renderer
 │   └── shared/                     # Shared code between main and renderer
 ├── .gitignore                      # Git ignore patterns
-├── components.json                 # Shadcn Components configuration 
+├── components.json                 # Shadcn Components configuration
 ├── electron.vite.config.ts         # Vite configuration for Electron
 ├── jest.config.ts                  # Jest testing configuration
 ├── LICENSE                         # Project license
