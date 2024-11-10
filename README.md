@@ -49,6 +49,9 @@ You can use this command to create a new project with this boilerplate directly 
 # create a new project using this boilerplate
 npx electron-react-shadcn
 
+# navigate to the project folder
+cd electron-react-shadcn
+
 # install dependencies
 npm install
 
