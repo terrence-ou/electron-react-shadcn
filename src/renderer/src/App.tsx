@@ -34,7 +34,7 @@ const App = () => {
         />
       </div>
       {/* heading */}
-      <h1 className="text-[2.1rem] mt-5 font-bold font-serif bg-gradient-to-r from-zinc-800 to-zinc-500 text-secondary rounded-md">
+      <h1 className="text-[2.1rem] mt-5 font-bold font-serif bg-gradient-to-r from-primary to-primary/40 text-secondary rounded-md">
         Electron + React + Shadcn
       </h1>
       <h3 className="my-5 font-bold text-lg">{count}</h3>
