@@ -13,7 +13,9 @@ const App = () => {
   };
 
   const handleTriggerIPC = () => {
-    console.log("IPC is invoked in main process, please check your terminal.");
+    console.log(
+      "IPC is invoked in main process, please check your terminal."
+    );
     window.context.triggerIPC();
   };
 
@@ -21,7 +23,10 @@ const App = () => {
     <div className="text-center">
       {/* logos */}
       <div className="flex justify-center items-center gap-6 my-8">
-        <img className="w-32 opacity-80 animate-spin-slow" src={electronIcon} />
+        <img
+          className="w-32 opacity-80 animate-spin-slow"
+          src={electronIcon}
+        />
         <p className="text-3xl">+</p>
         <img
           className="w-32 h-28 opacity-80 animate-spin-slow"
@@ -50,8 +55,9 @@ const App = () => {
       {/* versions */}
       <Versions />
       <p className="text-sm mt-0">
-        Press <span className="font-bold">F12</span> to toggle the DevTool.
-        Press <span className="font-bold">Ctrl/Cmd+r</span> to re-draw the view.
+        Press <span className="font-bold">F12</span> to toggle the
+        DevTool. Press <span className="font-bold">Ctrl/Cmd+r</span>{" "}
+        to re-draw the view.
       </p>
     </div>
   );

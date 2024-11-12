@@ -11,8 +11,9 @@
   * {
     @apply border-border;
   }
+
   body {
-    @apply flex items-center justify-center min-h-dvh text-foreground bg-gradient-to-tr from-primary/30 via-primary/10 to-background;
+    @apply flex items-center justify-center min-h-dvh text-foreground bg-gradient-to-tr from-primary/30 to-background;
     font-feature-settings:
       "rlig" 1,
       "calt" 1;
