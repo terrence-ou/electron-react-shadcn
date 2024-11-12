@@ -8,7 +8,7 @@ import shadcnIcon from "./assets/shadcn_icon.svg";
 const App = () => {
   const [count, setCount] = useState<number>(0);
 
-  const hanleIncreaseCount = () => {
+  const handleIncreaseCount = () => {
     setCount((prevCount) => prevCount + 1);
   };
 
@@ -45,7 +45,7 @@ const App = () => {
       <h3 className="my-5 font-bold text-lg">{count}</h3>
       {/* interaction buttons */}
       <div className="flex justify-center gap-5 mb-10">
-        <Button onClick={hanleIncreaseCount} className="w-32 h-9">
+        <Button onClick={handleIncreaseCount} className="w-32 h-9">
           Increase Count
         </Button>
         <Button onClick={handleTriggerIPC} className="w-32 h-9">
