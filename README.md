@@ -6,7 +6,7 @@
 
 ## Overview
 
-This Electron boilerplate enables developers to quickly build cross-platform apps using Electron, Vite, and React with Shadcn UI. Based on [@alex8088](https://github.com/alex8088)’s awsome `npm create @quick-start/electron` package, this template includes added styling (Tailwind, Shadcn UI) and testing libraries (Jest, Testing Library) to streamline setup and save development time.
+This Electron boilerplate enables developers to quickly build cross-platform apps using Electron, Vite, and React with Shadcn UI. Based on [@alex8088](https://github.com/alex8088)’s awesome `npm create @quick-start/electron` package, this template includes added styling (Tailwind, Shadcn UI) and testing libraries (Jest, Testing Library) to streamline setup and save development time.
 
 ### Tech Stack
 
@@ -20,9 +20,24 @@ This Electron boilerplate enables developers to quickly build cross-platform app
 
 ## Quick Start
 
-### Option 1: Clone this repository directly
+### Option 1 (Recommended): Use `npx electron-react-shadcn` to create a new project.
 
-You can use this boilerplate by directly download or clone this repository, and install the dependencies.
+You can use this command to create a new project with this boilerplate directly in the directory. You can also setup and project name and theme colors by following the command prompts.
+
+```bash
+# create a new project using this boilerplate
+npx electron-react-shadcn
+
+# navigate to the project folder
+cd electron-react-shadcn
+
+# install dependencies and run the project in dev mode
+npm install && npm run dev
+```
+
+### Option 2: Clone this repository directly
+
+You can use this boilerplate by directly downloading or clone this repository, and install the dependencies.
 
 ```bash
 # clone this project
@@ -41,23 +56,6 @@ npm install
 npm run dev
 ```
 
-### Option 2 (Experimental): Use `npx electron-react-shadcn` to create a new project.
-
-You can use this command to create a new project with this boilerplate directly in the directory.
-
-```bash
-# create a new project using this boilerplate
-npx electron-react-shadcn
-
-# navigate to the project folder
-cd electron-react-shadcn
-
-# install dependencies
-npm install
-
-# start the project in dev mode
-npm run dev
-```
 
 ### Test and build commands
 
