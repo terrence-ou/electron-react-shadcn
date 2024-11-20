@@ -62,8 +62,9 @@ app.whenReady().then(() => {
   });
 
   // IPC events
-  ipcMain.handle("getVersions", (_, ...args: Parameters<GetVersionsFn>) =>
-    getVersions(...args),
+  ipcMain.handle(
+    "getVersions",
+    (_, ...args: Parameters<GetVersionsFn>) => getVersions(...args)
   );
 
   ipcMain.handle("triggerIPC", () => triggerIPC());

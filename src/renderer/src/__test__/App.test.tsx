@@ -1,6 +1,7 @@
 import "@testing-library/jest-dom";
 import "./utils/window.mock";
 import { render, screen, fireEvent } from "./utils";
+import { expect, test } from "vitest";
 import { act } from "react";
 import App from "@/App";
 
@@ -11,7 +12,9 @@ describe("Tesing default interface", () => {
     });
   });
   test("check screen elements", () => {
-    expect(screen.getByText(/Electron \+ React \+ Shadcn/i)).toBeVisible();
+    expect(
+      screen.getByText(/Electron \+ React \+ Shadcn/i)
+    ).toBeVisible();
     expect(screen.getByText(/Increase Count/i)).toBeVisible();
     expect(screen.getByText(/Invoke IPC/i)).toBeVisible();
   });
