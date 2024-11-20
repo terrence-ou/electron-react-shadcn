@@ -17,10 +17,9 @@
     "build:win": "npm run build && electron-builder --win",
     "build:mac": "electron-vite build && electron-builder --mac",
     "build:linux": "electron-vite build && electron-builder --linux",
-    "test:unit": "jest",
-    "coverage:unit": "jest --coverage",
+    "test:unit": "vitest",
     "test": "npm run test:unit",
-    "coverage": "npm run coverage:unit"
+    "coverage": "vitest run --coverage"
   },
   "dependencies": {
     "@electron-toolkit/preload": "^3.0.1",
@@ -44,12 +43,12 @@
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "@vitejs/plugin-react": "^4.2.1",
+    "@vitest/coverage-v8": "^2.1.5",
     "autoprefixer": "^10.4.20",
-    "electron": "^33.1.0",
+    "electron": "^32.2.0",
     "electron-builder": "^24.9.1",
     "electron-vite": "^2.0.0",
     "eslint-plugin-react": "^7.33.2",
-    "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
     "postcss": "^8.4.47",
     "prettier": "^3.2.4",
@@ -59,6 +58,7 @@
     "ts-jest": "^29.2.5",
     "ts-node": "^10.9.2",
     "typescript": "^5.3.3",
-    "vite": "^5.0.12"
+    "vite": "^5.0.12",
+    "vitest": "^2.1.5"
   }
 }
