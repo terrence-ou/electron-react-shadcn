@@ -16,7 +16,7 @@ This Electron boilerplate enables developers to quickly build cross-platform app
 | **Frontend Library**      | [React](https://react.dev/)                                                                 |
 | **Build Tool**            | [Vite](https://vite.dev/), [Electron-Vite](https://electron-vite.org/)                                                                   |
 | **UI and Styling**        | [shadcn](https://ui.shadcn.com/), [Tailwind](https://tailwindcss.com/)                      |
-| **Testing**               | [Jest](https://jestjs.io/), [Testing Library](https://testing-library.com/)                 |
+| **Testing**               | [Vitest](https://vitest.dev), [Testing Library](https://testing-library.com/)                 |
 
 ## Quick Start
 
@@ -99,7 +99,7 @@ npm run build:linux # build for linux
 ├── .gitignore                      # Git ignore patterns
 ├── components.json                 # Shadcn Components configuration
 ├── electron.vite.config.ts         # Vite configuration for Electron
-├── jest.config.ts                  # Jest testing configuration
+├── vitest.config.ts                # Vitest testing configuration
 ├── LICENSE                         # Project license
 ├── package.json                    # Project metadata and dependencies
 ├── package-lock.json               # Dependency lock file
