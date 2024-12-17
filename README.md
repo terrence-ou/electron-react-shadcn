@@ -99,7 +99,7 @@ npm run build:linux # build for linux
 ├── .gitignore                      # Git ignore patterns
 ├── components.json                 # Shadcn Components configuration
 ├── electron.vite.config.ts         # Vite configuration for Electron
-├── vitest.config.ts                # Vitest testing configuration
+├── vite.config.mjs                 # Vitest testing configuration
 ├── LICENSE                         # Project license
 ├── package.json                    # Project metadata and dependencies
 ├── package-lock.json               # Dependency lock file
